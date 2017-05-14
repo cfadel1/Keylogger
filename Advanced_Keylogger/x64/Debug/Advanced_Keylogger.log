@@ -1,0 +1,10 @@
+﻿  stdafx.cpp
+  main.cpp
+c:\users\cedric\documents\github\keylogger\advanced_keylogger\helper.h(3): warning C4005: '_CRT_SECURE_NO_WARNINGS': macro redefinition
+  c:\users\cedric\documents\github\keylogger\advanced_keylogger\helper.h(3): note: command-line arguments:  see previous definition of '_CRT_SECURE_NO_WARNINGS'
+c:\users\cedric\documents\github\keylogger\advanced_keylogger\timer.h(139): warning C4244: 'return': conversion from '__int64' to 'unsigned long', possible loss of data
+c:\users\cedric\documents\github\keylogger\advanced_keylogger\io.h(23): warning C4800: 'BOOL': forcing value to bool 'true' or 'false' (performance warning)
+c:\users\cedric\documents\github\keylogger\advanced_keylogger\sendmail.h(157): warning C4800: 'BOOL': forcing value to bool 'true' or 'false' (performance warning)
+c:\users\cedric\documents\github\keylogger\advanced_keylogger\keybhook.h(50): warning C4800: 'BOOL': forcing value to bool 'true' or 'false' (performance warning)
+  Advanced_Keylogger.vcxproj -> C:\Users\Cedric\Documents\GitHub\Keylogger\x64\Debug\Advanced_Keylogger.exe
+  Advanced_Keylogger.vcxproj -> C:\Users\Cedric\Documents\GitHub\Keylogger\x64\Debug\Advanced_Keylogger.pdb (Full PDB)

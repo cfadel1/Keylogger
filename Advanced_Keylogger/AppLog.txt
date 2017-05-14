@@ -1,0 +1,8 @@
+[14/05/2017  13:12:26]
+Installing hook...
+[14/05/2017  13:12:26]
+Succesfully installed hook
+[14/05/2017  13:12:44]
+WARNING: Email not sent as file is empty.
+[14/05/2017  13:13:04]
+<From SendMail> Return code: 7
